@@ -30,7 +30,10 @@ responses:
   utter_did_that_help:
   - text: Did that help you?
   utter_happy:
-  - text: Great, carry on!
+  - buttons:
+    - payload: affirm
+      title: I will!
+    text: Great, carry on!
   utter_goodbye:
   - text: Bye
   utter_iamabot:
@@ -42,28 +45,6 @@ responses:
     - payload: /mood_unhappy
       title: Sad
     text: Hi, how are you?
-  - buttons:
-    - payload: ''
-      title: '1'
-    - payload: ''
-      title: '2'
-    - payload: ''
-      title: '3'
-    - payload: ''
-      title: '4'
-    - payload: ''
-      title: '5'
-    - payload: ''
-      title: '6'
-    - payload: ''
-      title: '7'
-    - payload: ''
-      title: '8'
-    - payload: ''
-      title: '9'
-    - payload: ''
-      title: '10'
-    text: Hi, how are you feeling today? Higher is better
   utter_turning_off_music:
   - text: ''
 actions:
