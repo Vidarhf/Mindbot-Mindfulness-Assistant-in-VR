@@ -31,7 +31,7 @@ responses:
   - text: Did that help you?
   utter_happy:
   - buttons:
-    - payload: affirm
+    - payload: /affirm
       title: I will!
     text: Great, carry on!
   utter_goodbye:
