@@ -19,6 +19,8 @@ intents:
     use_entities: true
 - bot_challenge:
     use_entities: true
+- turn_off_music:
+    use_entities: true
 entities: []
 slots: {}
 responses:
@@ -34,7 +36,37 @@ responses:
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
   utter_greet:
-  - text: This is Uberduck. It's a synthetic speech toy. I started working on Uberduck in 2020 with the goal of creating a friendly, creative, open-ended dialog agent. I built an interactive audio chatbot over WebRTC that generated text responses with a Transformer model and synthesized them to audio, but I found that speech synthesis was the most exciting part of the project.
-actions: []
+  - buttons:
+    - payload: /mood_great
+      title: Great
+    - payload: /mood_unhappy
+      title: Sad
+    text: Hi, how are you?
+  - buttons:
+    - payload: ''
+      title: '1'
+    - payload: ''
+      title: '2'
+    - payload: ''
+      title: '3'
+    - payload: ''
+      title: '4'
+    - payload: ''
+      title: '5'
+    - payload: ''
+      title: '6'
+    - payload: ''
+      title: '7'
+    - payload: ''
+      title: '8'
+    - payload: ''
+      title: '9'
+    - payload: ''
+      title: '10'
+    text: Hi, how are you feeling today? Higher is better
+  utter_turning_off_music:
+  - text: ''
+actions:
+- utter_turning_off_music
 forms: {}
 e2e_actions: []
