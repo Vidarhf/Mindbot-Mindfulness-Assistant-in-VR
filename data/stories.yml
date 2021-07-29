@@ -1,43 +1,21 @@
 version: "2.0"
 stories:
-- story: happy path
+- story: introduction
   steps:
   - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
-- story: sad path 1
+  - action: utter_introduce
+  - intent: introduce_name
+    entities:
+      - user_name: Ali
+  - action: utter_greet_by_name
+- story: interactive_story_1
   steps:
   - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+  - action: utter_introduce
+  - intent: introduce_name
+    entities:
+    - user_name: vidar
+  - slot_was_set:
+    - user_name: vidar
+  - action: utter_greet_by_name
   - intent: affirm
-  - action: utter_happy
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
-- story: Story from Conversation ID 6e910d0cf8ce4390bc49582c64209d33
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
-  - intent: goodbye
-  - action: utter_goodbye
-- story: Story from Conversation ID c15f944a112a4490afb5b73fcdd51ca8
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy

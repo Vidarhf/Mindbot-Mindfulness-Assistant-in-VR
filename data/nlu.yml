@@ -1,5 +1,25 @@
 version: "2.0"
 nlu:
+- intent: introduce_name
+  examples: |
+    - Hi, I'm [John](user_name)
+    - Hi mindbot i'm [jenny](user_name)
+    - [jenny](user_name)
+    - [Benny](user_name)
+    - [John](user_name)
+    - I'm [jenny](user_name)
+    - [Gustav](user_name)
+    - [Anna](user_name)
+    - [Ben](user_name)
+    - [Jon](user_name)
+    - My name is [Jakob](user_name)
+    - My name is [Jenny](user_name)
+    - Hello, i am [peter](user_name)
+    - yo, i'm [petra](user_name)
+    - waddup im [susan](user_name)
+    - [Sara](user_name) i am
+    - [Benjamin](user_name) is my name
+    - My name is [vidar](user_name)
 - intent: greet
   examples: |
     - hey
@@ -84,6 +104,3 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
-- intent: turn_off_music
-  examples: |
-    - turn off the music
