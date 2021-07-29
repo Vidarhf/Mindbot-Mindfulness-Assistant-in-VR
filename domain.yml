@@ -3,14 +3,22 @@ session_config:
   session_expiration_time: 300
   carry_over_slots_to_new_session: true
 intents:
-- affirm
-- greet
-- introduce_name
-- goodbye
-- deny
-- mood_great
-- mood_unhappy
-- bot_challenge
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- turn_off_music:
+    use_entities: true
 entities:
 - user_name
 slots:
@@ -44,6 +52,3 @@ responses:
       payload: /mood_great
     - title: sad
       payload: /mood_sad
-actions:
-- utter_greet_by_name
-- utter_introduce
