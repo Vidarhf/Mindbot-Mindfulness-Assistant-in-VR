@@ -1,6 +1,13 @@
 version: "2.0"
 
 rules:
+- rule: Greet with name when name is set
+  condition:
+    - slot_was_set:
+      - user_name: "Dummy"
+  steps:
+  - intent: greet
+  - action: utter_greet_by_name
 
 - rule: Say goodbye anytime the user says goodbye
   steps:

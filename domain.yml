@@ -58,7 +58,7 @@ responses:
   - text: Roger that, turning off music.
   utter_music_on:
   - text: Ok, turning on music.
-  utter_introduce:
+  utter_ask_name_form_user_name:
   - text: Hi, I'm Mindbot. What should I call you?
   utter_relax_or_talk:
   - buttons:
@@ -84,5 +84,10 @@ responses:
   - image: https://i.imgur.com/Huou7Gh.gif
     text: If you want, you can try breathing in sync with this
 actions: []
-forms: {}
+forms:
+  name_form:
+    required_slots:
+        user_name:
+          - type: from_entity
+            entity: user_name
 e2e_actions: []
