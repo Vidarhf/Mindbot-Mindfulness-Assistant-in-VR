@@ -1,14 +1,6 @@
 version: "2.0"
 
 rules:
-- rule: Greet with name when name is set
-  condition:
-    - slot_was_set:
-      - user_name: "Dummy"
-  steps:
-  - intent: greet
-  - action: utter_greet_by_name
-
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
@@ -32,7 +24,7 @@ rules:
 
 - rule: Turn off music when user asks
   steps:
-  - intent: turn_on_music
+  - intent: turn_off_music
   - action: utter_command_turn_off_music
   - action: utter_music_off
 

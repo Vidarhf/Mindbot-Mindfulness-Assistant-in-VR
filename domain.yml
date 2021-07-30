@@ -1,48 +1,33 @@
 version: '2.0'
-config:
-  store_entities_as_slots: true
 session_config:
   session_expiration_time: 300
   carry_over_slots_to_new_session: true
 intents:
-- mood_happy:
-    use_entities: true
-- mood_unhappy:
-    use_entities: true
-- breathing_exercise:
-    use_entities: true
-- thank_you:
-    use_entities: true
-- greet:
-    use_entities: true
-- goodbye:
-    use_entities: true
-- affirm:
-    use_entities: true
-- deny:
-    use_entities: true
-- bot_challenge:
-    use_entities: true
-- turn_off_music:
-    use_entities: true
-- turn_on_music:
-    use_entities: true
-- introduce_name:
-    use_entities: true
+- introduce_name
+- turn_on_music
+- greet
+- goodbye
+- mood_happy
+- mood_unhappy
+- breathing_exercise
+- thank_you
+- affirm
+- deny
+- bot_challenge
+- turn_off_music
 entities:
 - user_name
 slots:
   user_name:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
-    auto_fill: true
+    type: text
     influence_conversation: false
   user_want_music:
-    type: rasa.shared.core.slots.BooleanSlot
-    initial_value: null
+    type: bool
     auto_fill: false
     influence_conversation: false
 responses:
+  utter_default:
+  - text: Sorry I didn't get that. Can you rephrase?
   utter_command_turn_off_music:
   - text: \COMMAND_turn_off_music
   utter_command_turn_on_music:
@@ -51,14 +36,14 @@ responses:
   - condition:
     - type: slot
       name: user_name
-      value: "Dummy"
+      value: Dummy
     text: no worries, {user_name}
   - text: no worries
   utter_music_off:
   - text: Roger that, turning off music.
   utter_music_on:
   - text: Ok, turning on music.
-  utter_ask_name_form_user_name:
+  utter_ask_user_name:
   - text: Hi, I'm Mindbot. What should I call you?
   utter_relax_or_talk:
   - buttons:
@@ -83,11 +68,7 @@ responses:
   utter_breathing_exercise:
   - image: https://i.imgur.com/Huou7Gh.gif
     text: If you want, you can try breathing in sync with this
-actions: []
-forms:
-  name_form:
-    required_slots:
-        user_name:
-          - type: from_entity
-            entity: user_name
-e2e_actions: []
+actions:
+- utter_ask_user_name
+- utter_greet_by_name
+- utter_music_on
