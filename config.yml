@@ -15,7 +15,6 @@ pipeline:
 - name: EntitySynonymMapper
 - name: ResponseSelector
   epochs: 100
-policies: 
 policies:
 - name: MemoizationPolicy
 - name: TEDPolicy
