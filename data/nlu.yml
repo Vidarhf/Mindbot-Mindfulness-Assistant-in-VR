@@ -20,6 +20,13 @@ nlu:
     - [Sara](user_name) i am
     - [Benjamin](user_name) is my name
     - My name is [vidar](user_name)
+    - You can call me [Al](user_name)
+    - Call me [John](user_name)
+    - Pleas call me [Johanna](user_name)
+    - ([Håkan](user_name))[user_name]
+    - [Anna](user_name) is
+    - [Jonas](user_name)
+    - Call me [Emmy](user_name)
 - intent: greet
   examples: |
     - hey
