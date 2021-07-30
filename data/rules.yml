@@ -17,12 +17,12 @@ rules:
   - intent: thank_you
   - action: utter_no_worries
 
-- rule: Turn off music when User asks
+- rule: Turn off music when user asks
   steps:
   - intent: turn_on_music
   - action: utter_command_turn_on_music
 
-- rule: Turn on music when User asks
+- rule: Turn on music when user asks
   steps:
   - intent: turn_on_music
   - action: utter_command_turn_off_music
@@ -30,4 +30,4 @@ rules:
 - rule: give breathing exercise
   steps:
   - intent: breathing_exercise
-  - action: utter_breathing_exervise
+  - action: utter_breathing_exercise
