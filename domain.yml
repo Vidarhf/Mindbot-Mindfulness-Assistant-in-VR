@@ -37,11 +37,11 @@ responses:
   - text: \COMMAND_turn_on_music
 
   utter_no_worries:
-    - condition:
-      - slot_was_set:
-        - user_name: "Dummy text";
-      text: No worries, {name}.
-    - text: no worries
+  - condition:
+    - type: slot
+      name: user_name
+      value: "Dummy"
+  - text: no worries
   utter_music_off:
   - text: Roger that, turning off music.
   utter_music_on:
