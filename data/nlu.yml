@@ -1,7 +1,7 @@
 version: "2.0"
 nlu:
 - intent: turn_on_music
-  exampples: |
+  examples: |
     - turn on music
     - turn the music on
     - I want some music
@@ -15,7 +15,7 @@ nlu:
     - music on
 
 - intent: turn_off_music
-  exampples: |
+  examples: |
     - turn off music
     - turn the music off
     - I dont want some music
@@ -31,7 +31,7 @@ nlu:
     - music off
     - music switch off
     - music pause
-    
+
 - intent: breathing_exercise
   examples: |
     - do you have any excercise i can do?
