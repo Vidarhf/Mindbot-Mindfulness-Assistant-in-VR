@@ -30,4 +30,4 @@ rules:
 - rule: give breathing exercise
   steps:
   - intent: breathing_exercise
-  - action: utter_breathing_exervise
+  - action: utter_breathing_exercise
