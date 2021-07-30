@@ -1,5 +1,37 @@
 version: "2.0"
 nlu:
+- intent: turn_on_music
+  examples: |
+    - turn on music
+    - turn the music on
+    - I want some music
+    - I would like some music
+    - I would Like music
+    - can you play music
+    - start the music
+    - will you start music
+    - start music
+    - turn music on
+    - music on
+
+- intent: turn_off_music
+  examples: |
+    - turn off music
+    - turn the music off
+    - I dont want some music
+    - I want music
+    - I dont want music playing
+    - can you stop the music
+    - stop music
+    - pause music
+    - pause the music
+    - will you stop music
+    - please stop music
+    - turn music off
+    - music off
+    - music switch off
+    - music pause
+
 - intent: breathing_exercise
   examples: |
     - do you have any excercise i can do?
@@ -76,11 +108,11 @@ nlu:
     - hello anyone here
 - intent: goodbye
   examples: |
-    - good afternoon
+    - goodnight
+    - good night
     - cu
     - good by
     - cee you later
-    - good night
     - bye
     - goodbye
     - have a nice day
@@ -104,41 +136,15 @@ nlu:
     - don't like that
     - no way
     - not really
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
 - intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+- intent: mood_unhappy
+  examples: |
+    - I'm having a bad day
+- intent: mood_happy
+  examples: |
+    - I'm having a good day

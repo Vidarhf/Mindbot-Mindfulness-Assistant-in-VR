@@ -5,15 +5,27 @@ session_config:
   session_expiration_time: 300
   carry_over_slots_to_new_session: true
 intents:
-- breathing_exercise
-- thank_you
+- mood_happy:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- breathing_exercise:
+    use_entities: true
+- thank_you:
+    use_entities: true
 - greet:
     use_entities: true
-- goodbye
-- affirm
-- deny
-- bot_challenge
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
 - turn_off_music:
+    use_entities: true
+- turn_on_music:
     use_entities: true
 - introduce_name:
     use_entities: true
@@ -35,14 +47,13 @@ responses:
   - text: \COMMAND_turn_off_music
   utter_command_turn_on_music:
   - text: \COMMAND_turn_on_music
-
   utter_no_worries:
-    - condition:
-      - slot_was_set:
-        - user_name
-      text: No worries, {name}.
-    
-    - text: no worries
+  - condition:
+    - type: slot
+      name: user_name
+      value: "Dummy"
+    text: no worries, {user_name}
+  - text: no worries
   utter_music_off:
   - text: Roger that, turning off music.
   utter_music_on:
@@ -50,13 +61,12 @@ responses:
   utter_introduce:
   - text: Hi, I'm Mindbot. What should I call you?
   utter_relax_or_talk:
-  - text: Would you like to talk or just relax today?
   - buttons:
     - payload: /choose_talk
       title: talk
     - payload: /choose_relax
       title: relax
-
+    text: Would you like to talk or just relax today?
   utter_greet_by_name:
   - text: I'm looking forward to getting to know you better, {user_name}
   utter_goodbye:
