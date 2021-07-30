@@ -1,5 +1,31 @@
 version: "2.0"
 nlu:
+- intent: breathing_exercise
+  examples: |
+    - do you have any excercise i can do?
+    - can you help me breath?
+    - breathing exercise
+    - How should I breath to calm down
+    - can you guide my breathing
+    - guide my breathing pls
+    - will you guide my breathing 
+    - bot, can you help me breath
+    - help me breath
+    - I want to breath calmly
+    - I want a breathing excercise
+    - how many seconds should I inhale?
+    - when should I hold my breath and exhale?
+- intent: thank_you
+  examples: |
+    - ty
+    - thanks
+    - thank you
+    - thanks for the help
+    - thank you very much for helping
+    - you're the best
+    - thank you mindcoach
+    - thank you robot
+    - thans kind robot
 - intent: introduce_name
   examples: |
     - Hi, I'm [John](user_name)
@@ -43,6 +69,11 @@ nlu:
     - goodevening
     - good afternoon
     - Hello I´m button
+    - yo
+    - hejhej
+    - waddup
+    - wassup
+    - hello anyone here
 - intent: goodbye
   examples: |
     - good afternoon

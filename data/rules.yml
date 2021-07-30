@@ -11,3 +11,23 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Say no worries when user thanks bot
+  steps:
+  - intent: thank_you
+  - action: utter_no_worries
+
+- rule: Turn off music when User asks
+  steps:
+  - intent: turn_on_music
+  - action: utter_command_turn_on_music
+
+- rule: Turn on music when User asks
+  steps:
+  - intent: turn_on_music
+  - action: utter_command_turn_off_music
+
+- rule: give breathing exercise
+  steps:
+  - intent: breathing_exercise
+  - action: utter_breathing_exervise
