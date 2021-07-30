@@ -5,6 +5,10 @@ session_config:
   session_expiration_time: 300
   carry_over_slots_to_new_session: true
 intents:
+- mood_happy:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
 - breathing_exercise:
     use_entities: true
 - thank_you:
@@ -20,6 +24,8 @@ intents:
 - bot_challenge:
     use_entities: true
 - turn_off_music:
+    use_entities: true
+- turn_on_music:
     use_entities: true
 - introduce_name:
     use_entities: true
