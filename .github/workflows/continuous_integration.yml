@@ -2,16 +2,25 @@ name: Continuous Integration
 on: [pull_request]
 
 jobs:
-  my_first_job:
-    name: My first job
+  training-testing:
+    name: Training and Testing
     runs-on: ubuntu-latest
     steps:
-      # Checks-out GitHub repository
-      # more: https://github.com/actions/checkout
-      - uses: actions/checkout@v2
-
-      # Run rasa train and rasa test
-      - name: My first step
+      - uses: actions/checkout@v1
+      - name: Rasa Train and Test GitHub Action
         uses: RasaHQ/rasa-train-test-gha@main
         with:
-          test_type: nlu
+          requirements_file: requirements.txt
+          data_validate: true
+          rasa_train: true
+          cross_validation: true
+          rasa_test: true
+          test_type: all
+          publish_summary: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload model
+        if: github.ref == 'refs/heads/main'
+        uses: actions/upload-artifact@master
+        with:
+          name: model
+          path: models
