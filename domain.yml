@@ -1,4 +1,6 @@
 version: '2.0'
+config:
+  store_entities_as_slots: true
 session_config:
   session_expiration_time: 300
   carry_over_slots_to_new_session: true
@@ -19,21 +21,26 @@ intents:
     use_entities: true
 - turn_off_music:
     use_entities: true
+- introduce_name:
+    use_entities: true
 entities:
 - user_name
 slots:
   user_name:
-    type: text
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
     influence_conversation: false
   music_playing:
-    type: bool
+    type: rasa.shared.core.slots.BooleanSlot
+    initial_value: null
     auto_fill: false
     influence_conversation: false
 responses:
   utter_introduce:
   - text: Hi, I'm Mindbot. What should I call you?
   utter_greet_by_name:
-  - text: Nice to meet you {user_name}
+  - text: I'm looking forward to getting to know you better, {user_name}
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
     text: 'Here is something to cheer you up:'
@@ -46,9 +53,15 @@ responses:
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
   utter_greet:
-  - text: Hi, how are you?
-    buttons:
-    - title: great
-      payload: /mood_great
-    - title: sad
-      payload: /mood_sad
+  - buttons:
+    - payload: /mood_great
+      title: great
+    - payload: /mood_sad
+      title: sad
+    text: Hi, how are you?
+  utter_breathing_exercise:
+  - image: https://i.imgur.com/Huou7Gh.gif
+    text: If you want, you can try breathing in sync with this
+actions: []
+forms: {}
+e2e_actions: []

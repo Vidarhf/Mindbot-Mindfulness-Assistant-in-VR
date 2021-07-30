@@ -1,28 +1,36 @@
-#### This file contains tests to evaluate that your bot behaves as expected.
-#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
-
+version: "2.0"
 stories:
 - story: introduction
   steps:
-  - user: |
+  - intent: greet
+    user: |-
       hello
-    intent: greet
   - action: utter_introduce
-  - user: |
+  - user: |-
       Joe
   - intent: introduce_name
   - action: utter_greet_by_name
-  
 - story: say goodbye
   steps:
-  - user: |
+  - intent: goodbye
+    user: |-
       bye-bye!
-    intent: goodbye
   - action: utter_goodbye
-
 - story: bot challenge
   steps:
-  - user: |
+  - intent: bot_challenge
+    user: |-
       are you a bot?
-    intent: bot_challenge
   - action: utter_iamabot
+- story: Story from Conversation ID 1202ed8a0a2e4a4eb2109c4f0674cc9a
+  steps:
+  - intent: greet
+    user: |-
+      Hi
+  - action: utter_introduce
+  - intent: introduce_name
+    user: |-
+      [Vidar](user_name)
+  - slot_was_set:
+    - user_name: Vidar
+  - action: utter_greet_by_name
