@@ -1,5 +1,37 @@
 version: "2.0"
 nlu:
+- intent: turn_on_music
+  exampples: |
+    - turn on music
+    - turn the music on
+    - I want some music
+    - I would like some music
+    - I would Like music
+    - can you play music
+    - start the music
+    - will you start music
+    - start music
+    - turn music on
+    - music on
+
+- intent: turn_off_music
+  exampples: |
+    - turn off music
+    - turn the music off
+    - I dont want some music
+    - I want music
+    - I dont want music playing
+    - can you stop the music
+    - stop music
+    - pause music
+    - pause the music
+    - will you stop music
+    - please stop music
+    - turn music off
+    - music off
+    - music switch off
+    - music pause
+    
 - intent: breathing_exercise
   examples: |
     - do you have any excercise i can do?
