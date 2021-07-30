@@ -39,9 +39,8 @@ responses:
   utter_no_worries:
     - condition:
       - slot_was_set:
-        - user_name
+        - user_name: "Dummy text";
       text: No worries, {name}.
-    
     - text: no worries
   utter_music_off:
   - text: Roger that, turning off music.
@@ -50,12 +49,12 @@ responses:
   utter_introduce:
   - text: Hi, I'm Mindbot. What should I call you?
   utter_relax_or_talk:
-  - text: Would you like to talk or just relax today?
   - buttons:
     - payload: /choose_talk
       title: talk
     - payload: /choose_relax
       title: relax
+    text: Would you like to talk or just relax today?
 
   utter_greet_by_name:
   - text: I'm looking forward to getting to know you better, {user_name}
