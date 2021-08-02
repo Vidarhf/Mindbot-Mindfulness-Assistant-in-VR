@@ -13,7 +13,9 @@ nlu:
     - start music
     - turn music on
     - music on
-
+    - Turn music on.
+    - Turn on music.
+    - Can you turn on the music?
 - intent: turn_off_music
   examples: |
     - turn off music
@@ -31,7 +33,11 @@ nlu:
     - music off
     - music switch off
     - music pause
-
+    - Turn music off.
+    - Can you turn off the music
+    - Hey bot, can you turn off music
+    - turn off the music
+    - Turn off the music, please.
 - intent: breathing_exercise
   examples: |
     - do you have any excercise i can do?
@@ -40,7 +46,7 @@ nlu:
     - How should I breath to calm down
     - can you guide my breathing
     - guide my breathing pls
-    - will you guide my breathing 
+    - will you guide my breathing
     - bot, can you help me breath
     - help me breath
     - I want to breath calmly
@@ -85,6 +91,9 @@ nlu:
     - [Anna](user_name) is
     - [Jonas](user_name)
     - Call me [Emmy](user_name)
+    - Call me Vod
+    - Random.
+    - Hi im [unity](user_name)
 - intent: greet
   examples: |
     - hey
@@ -106,6 +115,8 @@ nlu:
     - waddup
     - wassup
     - hello anyone here
+    - Hello
+    - Hi
 - intent: goodbye
   examples: |
     - goodnight
