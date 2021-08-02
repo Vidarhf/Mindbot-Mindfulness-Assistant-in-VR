@@ -16,6 +16,8 @@ nlu:
     - can you turn on some music?
     - Turn music on.
     - Turn on music.
+    - Can you turn on the music?
+    - Do you have music?
 - intent: turn_off_music
   examples: |
     - turn off music
@@ -35,6 +37,8 @@ nlu:
     - music pause
     - Turn music off.
     - Can you turn off the music
+    - Hey bot, can you turn off music
+    - turn off the music
 - intent: breathing_exercise
   examples: |
     - do you have any excercise i can do?
@@ -95,6 +99,13 @@ nlu:
     - [Random](user_name).
     - Hi, I'm [unity](user_name).
     - Call me [john](user_name)
+    - [Johnny](user_name)
+    - Mr Listening for voice. Hello, I am [Nicholas](user_name) hello.
+    - Call me [John](user_name).
+    - [pete](user_name)
+    - [Vidar](user_name)
+    - Hello I'm [button](user_name)
+    - Hello I'm [Ali](user_name)
 - intent: greet
   examples: |
     - hey
@@ -136,6 +147,7 @@ nlu:
     - bye bye
     - see you later
     - Bye now
+    - Goodbye.
 - intent: affirm
   examples: |
     - yes
@@ -154,6 +166,7 @@ nlu:
     - no way
     - not really
     - No you are not.
+    - No.
 - intent: bot_challenge
   examples: |
     - are you a bot?
@@ -171,3 +184,9 @@ nlu:
   examples: |
     - Nice place you got here.
     - Who is president
+    - Can you change my oil?
+    - What is 2+4
+    - Who is president in Swedene
+    - I want some food
+    - What is the difference between apples and pears
+    - Listening for voices.

@@ -6,15 +6,13 @@ stories:
   - action: utter_ask_user_name
   - intent: introduce_name
     entities:
-      - user_name: Ali
+    - user_name: Ali
   - action: utter_greet_by_name
-
 - story: turning on music
   steps:
   - intent: turn_on_music
   - action: utter_command_turn_on_music
   - action: utter_music_on
-
 - story: turning on music thanks
   steps:
   - intent: turn_on_music
@@ -22,13 +20,11 @@ stories:
   - action: utter_music_on
   - intent: thank_you
   - action: utter_no_worries
-
 - story: turning off music
   steps:
   - intent: turn_off_music
   - action: utter_command_turn_off_music
   - action: utter_music_off
-
 - story: turning off music thanks
   steps:
   - intent: turn_off_music
@@ -36,3 +32,40 @@ stories:
   - action: utter_music_off
   - intent: thank_you
   - action: utter_no_worries
+- story: Story from Conversation ID 4242416ba5a1496d998632d4affdb7a3
+  steps:
+  - intent: greet
+  - action: utter_ask_user_name
+  - intent: introduce_name
+    entities:
+    - user_name: Johnny
+  - slot_was_set:
+    - user_name: Johnny
+  - action: utter_greet_by_name
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+- story: Story from Conversation ID 0d80385a4ddb4e3a8b34decd2b123370
+  steps:
+  - slot_was_set:
+    - user_name: Ali
+  - action: utter_greet_by_name
+  - intent: turn_on_music
+  - action: utter_command_turn_on_music
+  - action: utter_music_on
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: turn_off_music
+  - action: utter_command_turn_off_music
+  - action: utter_music_off
+  - intent: thank_you
+  - action: utter_no_worries
+  - intent: goodbye
+  - action: utter_goodbye
