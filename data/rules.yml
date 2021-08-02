@@ -1,34 +1,32 @@
 version: "2.0"
-
 rules:
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
   - action: utter_goodbye
-
 - rule: Say 'I am a bot' anytime the user challenges
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
-
 - rule: Say no worries when user thanks bot
   steps:
   - intent: thank_you
   - action: utter_no_worries
-
 - rule: Turn on music when user asks
   steps:
   - intent: turn_on_music
   - action: utter_command_turn_on_music
   - action: utter_music_on
-
 - rule: Turn off music when user asks
   steps:
   - intent: turn_off_music
   - action: utter_command_turn_off_music
   - action: utter_music_off
-
 - rule: give breathing exercise
   steps:
   - intent: breathing_exercise
   - action: utter_breathing_exercise
+- rule: out-of-scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope

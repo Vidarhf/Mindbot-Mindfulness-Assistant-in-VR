@@ -1,28 +1,47 @@
 version: '2.0'
+config:
+  store_entities_as_slots: true
 session_config:
   session_expiration_time: 300
   carry_over_slots_to_new_session: true
 intents:
-- introduce_name
-- turn_on_music
-- greet
-- goodbye
-- mood_happy
-- mood_unhappy
-- breathing_exercise
-- thank_you
-- affirm
-- deny
-- bot_challenge
-- turn_off_music
+- introduce_name:
+    use_entities: true
+- turn_on_music:
+    use_entities: true
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- mood_happy:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- breathing_exercise:
+    use_entities: true
+- thank_you:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- turn_off_music:
+    use_entities: true
+- out_of_scope:
+    use_entities: true
 entities:
 - user_name
 slots:
   user_name:
-    type: text
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
     influence_conversation: false
   user_want_music:
-    type: bool
+    type: rasa.shared.core.slots.BooleanSlot
+    initial_value: null
     auto_fill: false
     influence_conversation: false
 responses:
@@ -34,8 +53,8 @@ responses:
   - text: \COMMAND_turn_on_music
   utter_no_worries:
   - condition:
-    - type: slot
-      name: user_name
+    - name: user_name
+      type: slot
       value: Dummy
     text: no worries, {user_name}
   - text: no worries
@@ -68,7 +87,13 @@ responses:
   utter_breathing_exercise:
   - image: https://i.imgur.com/Huou7Gh.gif
     text: If you want, you can try breathing in sync with this
+  utter_out_of_scope:
+  - text: Sorry, I can't handle that request
+  - text: I'm sorry, I dont know how to answer that.
+  - text: I don't know how to handle that request yet
 actions:
 - utter_ask_user_name
 - utter_greet_by_name
 - utter_music_on
+forms: {}
+e2e_actions: []
