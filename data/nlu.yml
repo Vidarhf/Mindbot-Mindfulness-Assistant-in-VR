@@ -64,6 +64,9 @@ nlu:
     - thank you mindcoach
     - thank you robot
     - thans kind robot
+    - You so kind
+    - Tank you very much
+    - thank you very much
 - intent: introduce_name
   examples: |
     - Hi, I'm [John](user_name)
@@ -130,6 +133,7 @@ nlu:
     - see you around
     - bye bye
     - see you later
+    - c u later alligator
 - intent: affirm
   examples: |
     - yes

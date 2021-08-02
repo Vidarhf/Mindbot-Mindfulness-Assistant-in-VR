@@ -1,7 +1,6 @@
 version: "2.0"
 
 rules:
-
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
@@ -25,7 +24,7 @@ rules:
 
 - rule: Turn off music when user asks
   steps:
-  - intent: turn_on_music
+  - intent: turn_off_music
   - action: utter_command_turn_off_music
   - action: utter_music_off
 

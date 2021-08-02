@@ -3,7 +3,7 @@ stories:
 - story: introduction
   steps:
   - intent: greet
-  - action: utter_introduce
+  - action: utter_ask_user_name
   - intent: introduce_name
     entities:
       - user_name: Ali
@@ -36,15 +36,3 @@ stories:
   - action: utter_music_off
   - intent: thank_you
   - action: utter_no_worries
-
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_introduce
-  - intent: introduce_name
-    entities:
-    - user_name: vidar
-  - slot_was_set:
-    - user_name: vidar
-  - action: utter_greet_by_name
-  - intent: affirm
