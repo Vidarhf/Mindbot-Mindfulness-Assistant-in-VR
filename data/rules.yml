@@ -35,3 +35,12 @@ rules:
   - intent: make_winter
   - action: utter_command_make_winter
   - action: utter_make_winter
+- rule: respond to chitchat
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
+- rule: Respond to player being at fireplace
+  steps:
+  - intent: inform
+  - action: utter_command_start_fireplace
+  - action: utter_player_at_fireplace

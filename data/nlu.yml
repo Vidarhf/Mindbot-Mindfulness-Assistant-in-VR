@@ -1,5 +1,8 @@
 version: "2.0"
 nlu:
+- intent: inform
+  examples: |
+    - [fireplace](player_at)
 - intent: turn_on_music
   examples: |
     - turn on music
@@ -167,10 +170,184 @@ nlu:
 - intent: mood_happy
   examples: |
     - I'm having a good day
-- intent: out_of_scope
+- intent: out_of_scope/non_english
+  examples: |
+    - Vem är du
+    - vad vill du
+    - Hallåå
+    - kan du tala svenska
+    - kan du prata sverige
+    - är du svensk
+    - hör du mig nu
+    - Wie fange ich mit Rasa an?
+    - hilf mir beim start
+    - tschüssikowski
+    - ¿Qué pasa?
+    - ça va ?
+    - como te llamas
+    - wer bist Du?
+    - como inicio en rasa
+    - come stai?
+    - como estas
+    - de donde eres
+    - de que lugar eres?
+    - epdi iruka
+    - eres humana
+    - kalhmera sara ti kaneis
+    - kannst du auch deutsch?
+    - kannst du dies auch auf deutsch?
+    - oui je besoine de l'aide
+    - que puedes hacer?
+    - tu parles francais?
+    - tudo bom
+    - tu pagal
+    - kannst du mir helfen
+    - tu kaisi he
+    - こにちは
+    - 日本語分かる？
+    - chào
+    - 你好
+    - I'm speaking a non-english language.
+- intent: out_of_scope/other
   examples: |
     - Nice place you got here.
     - Who is president
+    - I am asking you an out of scope question
+    - 4 + 2 = ?
+    - After registration I see that I have an available balance of 0.00000000. What does this balance represent?
+    - Are you ready?
+    - But you're an english site :(
+    - Can I ask you questions first?
+    - Can I die
+    - Can I get a hamburger?
+    - Can YouTube talk?
+    - Can you call me back ?
+    - Can you give me your datacenter's password
+    - Can you give me your datacenter's password?
+    - Can you make sandwiches?
+    - Can you please send me an uber
+    - Do I have to accept?
+    - Do you know [Kevin Pelton](name)
+    - Find nearest [pizzahut](company)
+    - Have we met before?
+    - HomeBase is advertised as a community. Is there a way to interact with other members of the community?
+    - How long does it take to set up a Rasa bot?
+    - I already told you! I'm a shitmuncher
+    - I am User
+    - I am an opioid addic
+     - give me a girl friend
+    - give me food
+    - go back
+    - google?
+    - great, I'd like to buy a house
+    - hang on let me find it
+    - have you ever seen [Keith Reilly](name)?
+    - help with [Alma Abrams](name)
+    - help with my life
+    - hey little mama let em whisper in your ear
+    - hey, I contacted you a couple of days ago but didn't get any response, any news?
+    - how
+    - how about NYC
+    - how are [Alicia Jackson](name)'s cats doing?
+    - how are the kids
+    - how can i get them?
+    - how can i test this
+    - how come you say ok ?
+    - how do you learn
+    - how good is Rasa
+    - how it compares to alexa
+    - how long have you been online?
+    - how long will the next version will launch?
+    - how many lines of codes
+    - how much is 10 + 89 ?
+    - how much is 10 + 89
+    - how to get rasa studio
+    - show me a picture of a chicken
+    - silly bot
+    - sing me a song
+    - so, I'm helping right now to training you?
+    - some thing else
+    - someone call the police i think the bot died
+    - sorry, i cannot rephrase
+    - sudo make me a sandwich
+    - tell me about yourself
+    - tell me more about next best action
+    - that doesn't sound like a joke
+    - that link doesn't work!
+    - the one that is better than you
+    - tricked  ya
+    - turn off my stove
+    - umm
+    - wait a bit i am still reading
+    - what about wheather
+    - what are contextual AI assistants and how different are they from chatbots?
+    - what are you doing now?
+    - what are your uses for universities
+    - what did you eat for lunch?
+    - what do oyu think about siri?
+    - what do you think abou siri?
+    - what do you think about [Stanley Ramirez](name)?
+    - what do you think of alexa
+    - what does your soul feel my friend
+    - what doing
+    - what else?
+    - what films do you like
+    - what i do after cd starter-pack-rasa-stack?
+    - what is a discourse?
+    - what is a mascot
+    - what is adlingo
+    - will u kill me
+    - will u kill me?
+    - winter is already leaving
+    - with you recommend me?
+    - would you like some water
+    - yeah, my dog was drinking a couple of litres of water per day and tried drinking the swimming pool
+    - you already have that
+    - you can learn how to make a coffe
+    - you have children?
+    - you have job opening
+    - you lock sweety
+    - you should learn to count
+    - you will know it from the single red rose it carries between its teeth
+    - you're a woman
+    - ı am learning python
+    - CALL THE POLICE
+        - contextua
+    - contextual
+    - talk to me about voulette
+    - voulette voulette
+    - Do you have a demo?
+    - Cars
+    - please voulette
+    - Out of scope question.
+    - i need money
+    - no, i need cash, money! Do you have it ?
+    - the beatles
+    - Hi i want to go palghar
+    - I want to go palghar
+    - your contry name
+    - you girl
+    - gsaf
+    - expert of rasa
+    - i want play ball
+    - flight catch up
+    - how do you like your coffee
+    - Can you get analytics on who I'm chatting with when I use Rasa
+    - coronavirus
+    - have you heard of corona?
+    - where do i type in commandy
+    - where to type in commands
+    - kiss me
+    - you have to
+    - what type of bot?
+    - sfasd
+    - asdkjasdhjkasd
+    - j  bhbhj
+    - eshdtjfjfyk
+    - drhdtjfjfyj
+    - sudo reboot
+    - asdfgasd
+    - asdfgasdas
 - intent: make_winter
   examples: |
     - Make it snow
@@ -182,3 +359,185 @@ nlu:
     - will you let it snow
     - Snow snow snow snow
     - Please can you create winter
+- intent: chitchat/ask_howdoing
+  examples: |
+    - Ahoy matey how are you?
+    - Are you ok?
+    - Do you feel good?
+    - Do you have a great day?
+    - HI Sara, what are you up to?
+    - Hi Sara! How are you?
+    - How are You?
+    - How are things?
+    - How are you
+    - How are you men?
+    - How are you today?
+    - How are you?
+    - How was your day?
+    - How you doing?
+    - How's it going
+    - How's it hanging?
+    - How's life treating you friend?
+    - How've you been?
+    - Hows it going
+    - I'm fine and you
+    - Is everything ok?
+    - What's going on?
+    - What's new?
+    - What's up
+    - What's up man
+    - and you
+    - are you alright
+    - are you happy
+    - are you having a good day
+    - are you ok
+    - are you okay
+    - h r u ?
+    - hello, how are you?
+    - hey how are you?
+    - hi how are you?
+    - hi how u doing
+    - hi sara, how are you?
+    - how ?
+    - how are things going
+    - how are things with you?
+     how is it going
+    - how is your day
+    - how is your day going
+    - how is your evening
+    - how r u
+    - how r u ?
+    - how r u>
+    - how you doing
+    - how you doing?
+    - how's it going?
+    - how's life
+    - how's life been treating you?
+    - how's your day going
+    - howareyou
+    - hw r u?
+    - is everything all right
+    - is everything okay
+    - nah, I'm good - how are you doing?
+    - okay hi how are you?
+    - wassup>
+    - what about your day
+    - what are you up to?
+    - what's good
+    - what's up
+    - what's up sara
+    - what's up?
+    - whatchcha doing
+    - whatchya upto ?
+    - whats goin on
+    - whats new
+    - whatsapp
+    - yow are you
+- intent: chitchat/ask_whatspossible
+  examples: |
+    - Can you explain me in one sentence what you are doing?
+    - Can you help me?
+    - Could you please show me what you can
+    - Great, is there anything else you can do, bot?
+    - How can you help me
+    - How you help me?
+    - I need help
+    - I need some help
+    - What are my options
+    - What are you able to do?
+    - What can I ask you?
+    - What can I do?
+    - What can you demo
+    - What can you do
+    - What can you do for me?
+    - What can you do?
+    - What can you tell me?
+    - What do you do
+    - anything els
+    - are there any other options?
+    - can I ask you anything else?
+    - can you do anything else?
+    - can you help me
+    - can you help me?
+    - come back
+    - cool! can I do something else here?
+    - hello what can you do for me
+    - help
+    - help me
+    - help please
+    - help pls
+    - help?
+    - hep me
+    - hi. Mindbot what do you do?
+    - hm that doesnt quite help me is there anything else you can do?
+    - how can i use you
+    - how can you help me
+    - how can you help me?
+    - how can you help?
+    - how does this work?
+    - how u can help me
+    - how you help me
+    - i asked you if you can do anything else
+    - i don't know what i want
+    - i need help
+    - more info
+    - now what?
+    - options
+    - show me the menu
+    - show me what's possible
+    - so now what
+    - so what can you do
+    - so what can you do?
+    - so what can you help me with?
+    - so what next?
+    - talk to me
+    - talk to me!
+    - tell me something you can do
+    - tell me what's your skill
+    - um what now
+    - what are all the things you understand?
+    - what are the options?
+    - what are you ding
+    - what are you doing
+    - what are you good at?
+    - what can I ask ?
+    - what can I ask you?
+    - what can I do here
+    - what can I do with Mindbot?
+    - what can I do with this bot
+    - what can i do here
+    - what can i do now
+    - what can u do
+    - what can we talk about?
+    - what can you answer
+    - what can you do
+    - what can you do for me
+    - what can you do, sara?
+    - what can you do?
+    - what can you offer me?
+    - what can you tell me
+    - what can you?
+    - what cn u do for me ?
+    - what do you do
+    - what do you do?
+    - what do you know except this?
+    - what else can I do here?
+    - what else can i do
+    - what else can i do?
+    - what else can you do?
+    - what else can you help with?
+    - what i have to do
+    - what is this bot for
+    - what u can do
+    - what u can do?
+    - what you can do
+    - what you can do for me?
+    - what you can do?
+    - what you do
+    - what you doing?
+    - what you talk about?
+    - you can hep me
+    - what can you teache me?
+    - Can rasa do calculations?
+    - what you can
+
