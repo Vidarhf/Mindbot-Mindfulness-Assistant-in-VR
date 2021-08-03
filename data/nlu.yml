@@ -171,3 +171,14 @@ nlu:
   examples: |
     - Nice place you got here.
     - Who is president
+- intent: make_winter
+  examples: |
+    - Make it snow
+    - Let it snow
+    - Can you create winter
+    - Can you take me to a winter environment
+    - Winter
+    - Make winter
+    - will you let it snow
+    - Snow snow snow snow
+    - Please can you create winter

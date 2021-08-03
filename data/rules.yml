@@ -30,3 +30,8 @@ rules:
   steps:
   - intent: out_of_scope
   - action: utter_out_of_scope
+- rule: Make winter environment when user asks
+  steps:
+  - intent: make_winter
+  - action: utter_command_make_winter
+  - action: utter_make_winter
