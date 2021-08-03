@@ -31,6 +31,8 @@ intents:
     use_entities: true
 - out_of_scope:
     use_entities: true
+- make_winter:
+    use_entities: true
 entities:
 - user_name
 slots:
@@ -91,6 +93,11 @@ responses:
   - text: Sorry, I can't handle that request
   - text: I'm sorry, I dont know how to answer that.
   - text: I don't know how to handle that request yet
+  utter_command_make_winter:
+  - text: \COMMAND_make_winter
+  utter_make_winter:
+  - text: Ok, let it snow
+  - text: Ok, look to the sky
 actions:
 - utter_ask_user_name
 - utter_greet_by_name
