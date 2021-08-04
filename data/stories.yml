@@ -9,6 +9,13 @@ stories:
       - user_name: Ali
   - action: utter_greet_by_name
 
+- story: introduction with name
+  steps:
+  - intent: introduce_name
+    entities:
+      - user_name: Ali
+  - action: utter_greet_by_name
+
 - story: turning on music
   steps:
   - intent: turn_on_music
@@ -36,3 +43,15 @@ stories:
   - action: utter_music_off
   - intent: thank_you
   - action: utter_no_worries
+
+- story: asking for winter
+  steps:
+  - intent: make_winter
+  - action: utter_command_make_winter
+  - action: utter_make_winter
+
+- story: asking for breathing exercise
+  steps:
+  - intent: breathing_exercise
+  - action: utter_command_breathing_exercise
+  - action: utter_breathing_exercise
