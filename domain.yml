@@ -40,11 +40,13 @@ intents:
 entities:
 - user_name
 - player_at
+- name
+- company
 slots:
   player_at:
     type: rasa.shared.core.slots.TextSlot
     initial_value: null
-    auto_fill: false;
+    auto_fill: true
     influence_conversation: false
   user_name:
     type: rasa.shared.core.slots.TextSlot
@@ -58,7 +60,7 @@ slots:
     influence_conversation: false
 responses:
   utter_player_at_fireplace:
-  - text: I see you found the fire place, let me start it for you.
+  - text: I see you found the fireplace, let me start it for you.
   utter_command_start_fireplace:
   - text: \COMMAND_start_fireplace
   utter_default:
@@ -101,27 +103,27 @@ responses:
       title: sad
     text: Hi, how are you?
   utter_breathing_exercise:
-  - image: https://i.imgur.com/Huou7Gh.gif
-    text: If you want, you can try breathing in sync with this
+  - text: If you want, you can try breathing in sync with this for as long as you'd like.
   utter_out_of_scope/other:
   - text: Sorry, I can't handle that request
   - text: I'm sorry, I dont know how to answer that.
   - text: I don't know how to handle that request yet
   utter_out_of_scope/non_english:
-  - text: "I only understand English, I'm sorry."
+  - text: I only understand English, I'm sorry.
   utter_command_make_winter:
   - text: \COMMAND_make_winter
   utter_make_winter:
   - text: Ok, let it snow
   - text: Ok, look to the sky
   utter_chitchat/ask_whatspossible:
-  - text: "You can ask me to start some music, making it snow,
-    or ask me for a breathing excercise"
+  - text: You can ask me to start some music, making it snow, or ask me for a breathing excercise
   utter_chitchat/ask_howdoing:
-  - text: "I'm great! Thanks for asking."
-  - text: "I'm good, thanks!"
-  - text: "A little bit too warm, otherwise fine."
-  - text: "A little bit cold, otherwise fine."
+  - text: I'm great! Thanks for asking.
+  - text: I'm good, thanks!
+  - text: A little bit too warm, otherwise fine.
+  - text: A little bit cold, otherwise fine.
+  utter_command_breathing_exercise:
+  - text: \COMMAND_breathing_exercise
 actions:
 - utter_ask_user_name
 - utter_greet_by_name
