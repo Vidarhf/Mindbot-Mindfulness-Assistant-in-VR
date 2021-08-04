@@ -164,12 +164,6 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
     - Are you a bot?
-- intent: mood_unhappy
-  examples: |
-    - I'm having a bad day
-- intent: mood_happy
-  examples: |
-    - I'm having a good day
 - intent: out_of_scope/non_english
   examples: |
     - Vem är du
@@ -227,28 +221,26 @@ nlu:
     - Can you make sandwiches?
     - Can you please send me an uber
     - Do I have to accept?
-    - Do you know [Kevin Pelton](name)
-    - Find nearest [pizzahut](company)
     - Have we met before?
     - HomeBase is advertised as a community. Is there a way to interact with other members of the community?
     - How long does it take to set up a Rasa bot?
     - I already told you! I'm a shitmuncher
     - I am User
     - I am an opioid addic
-     - give me a girl friend
+    - give me a girl friend
     - give me food
     - go back
     - google?
     - great, I'd like to buy a house
     - hang on let me find it
-    - have you ever seen [Keith Reilly](name)?
-    - help with [Alma Abrams](name)
+    - have you ever seen Keith Reilly?
+    - help with Alma Abrams
     - help with my life
     - hey little mama let em whisper in your ear
     - hey, I contacted you a couple of days ago but didn't get any response, any news?
     - how
     - how about NYC
-    - how are [Alicia Jackson](name)'s cats doing?
+    - how are Alicia Jackson's cats doing?
     - how are the kids
     - how can i get them?
     - how can i test this
@@ -286,7 +278,7 @@ nlu:
     - what did you eat for lunch?
     - what do oyu think about siri?
     - what do you think abou siri?
-    - what do you think about [Stanley Ramirez](name)?
+    - what do you think about Stanley Ramirez?
     - what do you think of alexa
     - what does your soul feel my friend
     - what doing
@@ -298,7 +290,6 @@ nlu:
     - what is adlingo
     - will u kill me
     - will u kill me?
-    - winter is already leaving
     - with you recommend me?
     - would you like some water
     - yeah, my dog was drinking a couple of litres of water per day and tried drinking the swimming pool
@@ -312,7 +303,6 @@ nlu:
     - you're a woman
     - ı am learning python
     - CALL THE POLICE
-        - contextua
     - contextual
     - talk to me about voulette
     - voulette voulette
@@ -359,6 +349,64 @@ nlu:
     - will you let it snow
     - Snow snow snow snow
     - Please can you create winter
+- intent: chitchat/ask_whatisit
+  examples: |
+    - Can you brief me about mindfulness
+    - Can you tell me more about mindfulness?
+    - Can you tell me what mindfulness does?
+    - Could you tell me more about mindfulness?
+    - Give me more information about mindfulness
+    - How does mindfulness work?
+    - I want to know about rsa
+    - I want to know what mindfulness actually does that isn't clear to me yet
+    - I want to learn what you does
+    - I want to learn what mindbot is
+    - I would like to know about mindfulness
+    - I would like to know more about your product
+    - OK can u brief me Abt mindfulness
+    - mindfulness?
+    - mindbot Is?
+    - WHAT IS IT
+    - WHAT IS this place
+    - What Is place?
+    - What can mindfulness do?
+    - What do you do as a company?
+    - What do you do at this place?
+    - What does you build?
+    - What does mindfulness do?
+    - What does mindfulness make?
+    - What does this place do exactly?
+    - What exactly is mindfulness?
+    - What is Rasa?
+    - What is rasa doing exactly?
+    - What is rasa?
+    - What is the RASA Stack?
+    - What's rasa?
+    - can you explain rasa?
+    - can you pls explain what rasa does
+    - could you tell me more about rasa
+    - explain me what rasa does
+    - explain me what rasa is
+- intent: chitchat/ask_whoisit
+  examples: |
+    - who are you
+    - who the hell are you?
+    - who are you?
+    - who are u
+    - who r u
+    - who is this
+    - tell me who you are
+    - what is your name
+    - hi what is your name?
+    - what is your name?
+    - what are you?
+    - what is ur name
+    - what I can call you
+    - your name?
+    - tell me your name
+    - what's your name
+    - what is you name
+    - what is you name and where are you from
 - intent: chitchat/ask_howdoing
   examples: |
     - Ahoy matey how are you?
@@ -401,7 +449,7 @@ nlu:
     - how ?
     - how are things going
     - how are things with you?
-     how is it going
+    - how is it going
     - how is your day
     - how is your day going
     - how is your evening

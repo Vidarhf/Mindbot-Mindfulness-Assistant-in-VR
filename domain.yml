@@ -15,10 +15,6 @@ intents:
     use_entities: true
 - goodbye:
     use_entities: true
-- mood_happy:
-    use_entities: true
-- mood_unhappy:
-    use_entities: true
 - breathing_exercise:
     use_entities: true
 - thank_you:
@@ -40,8 +36,6 @@ intents:
 entities:
 - user_name
 - player_at
-- name
-- company
 slots:
   player_at:
     type: rasa.shared.core.slots.TextSlot
@@ -115,6 +109,10 @@ responses:
   utter_make_winter:
   - text: Ok, let it snow
   - text: Ok, look to the sky
+  utter_chitchat/ask_whoisit:
+  - text: I'm Mindbot. I'm your coach and assistant in practicing mindfulness.
+  utter_chitchat/ask_whatisit:
+  - text: This is a place to relax your body and mind. Mindfulness is a type of meditation in which you focus on being aware of what you're sensing and feeling in the moment, without interpretation or judgment.
   utter_chitchat/ask_whatspossible:
   - text: You can ask me to start some music, making it snow, or ask me for a breathing excercise
   utter_chitchat/ask_howdoing:
