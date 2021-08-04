@@ -235,7 +235,6 @@ nlu:
     - I already told you! I'm a shitmuncher
     - I am User
     - I am an opioid addic
-     - give me a girl friend
     - give me food
     - go back
     - google?
@@ -312,7 +311,6 @@ nlu:
     - you're a woman
     - ı am learning python
     - CALL THE POLICE
-        - contextua
     - contextual
     - talk to me about voulette
     - voulette voulette
@@ -401,7 +399,6 @@ nlu:
     - how ?
     - how are things going
     - how are things with you?
-     how is it going
     - how is your day
     - how is your day going
     - how is your evening
@@ -540,4 +537,9 @@ nlu:
     - what can you teache me?
     - Can rasa do calculations?
     - what you can
-
+- intent: schedule_appointment
+  examples: |
+    - I'd like to book [tuesday](date) at [six](time)
+    - I wanna book wednesday at seven
+    - Can we say tomorrow at 6pm
+    - lets say monday at five
