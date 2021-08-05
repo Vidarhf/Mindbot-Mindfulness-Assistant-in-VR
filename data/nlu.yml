@@ -53,6 +53,7 @@ nlu:
     - I want a breathing excercise
     - how many seconds should I inhale?
     - when should I hold my breath and exhale?
+    - No
 - intent: thank_you
   examples: |
     - ty
