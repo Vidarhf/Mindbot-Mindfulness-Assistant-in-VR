@@ -338,6 +338,7 @@ nlu:
     - sudo reboot
     - asdfgasd
     - asdfgasdas
+    - OK, I'm finished.
 - intent: make_winter
   examples: |
     - Make it snow
@@ -588,4 +589,3 @@ nlu:
     - what can you teache me?
     - Can rasa do calculations?
     - what you can
-
