@@ -19,6 +19,12 @@ nlu:
     - can you turn on some music?
     - Turn music on.
     - Turn on music.
+    - Starting music.
+    - Start some music.
+    - Can you start some music?
+    - Turn on some music then.
+    - Can you turn on some music?
+    - Do you have music?
 - intent: turn_off_music
   examples: |
     - turn off music
@@ -38,6 +44,9 @@ nlu:
     - music pause
     - Turn music off.
     - Can you turn off the music
+    - Stop the music please.
+    - Turn off the music, please.
+    - Can you turn off the music bot
 - intent: breathing_exercise
   examples: |
     - do you have any excercise i can do?
@@ -53,6 +62,9 @@ nlu:
     - I want a breathing excercise
     - how many seconds should I inhale?
     - when should I hold my breath and exhale?
+    - I would like a breathing exercise.
+    - Breathing exercise please.
+    - OK breathing exercise please.
 - intent: thank_you
   examples: |
     - ty
@@ -64,6 +76,7 @@ nlu:
     - thank you mindcoach
     - thank you robot
     - thans kind robot
+    - Thank you.
 - intent: introduce_name
   examples: |
     - Hi, I'm [John](user_name)
@@ -98,6 +111,13 @@ nlu:
     - [Random](user_name).
     - Hi, I'm [unity](user_name).
     - Call me [john](user_name)
+    - [Bob](user_name)
+    - [Joseph](user_name).
+    - Hi i'm [vidar](user_name)
+    - Hello I'm [vidar](user_name)
+    - Hi my name is [sara](user_name)
+    - [Youssef](user_name)
+    - Hello I'm [Ali](user_name)
 - intent: greet
   examples: |
     - hey
@@ -125,6 +145,8 @@ nlu:
     - Hey.
     - Hi.
     - Hey hi.
+    - Welcome.
+    - Hello I'm button
 - intent: goodbye
   examples: |
     - goodnight
@@ -139,6 +161,9 @@ nlu:
     - bye bye
     - see you later
     - Bye now
+    - Goodbye.
+    - I'm going to leave now, goodbye.
+    - good bye!
 - intent: affirm
   examples: |
     - yes
@@ -147,6 +172,8 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - Yeah.
+    - Yeah yeah, yeah.
 - intent: deny
   examples: |
     - no
@@ -157,6 +184,7 @@ nlu:
     - no way
     - not really
     - No you are not.
+    - No
 - intent: bot_challenge
   examples: |
     - are you a bot?
@@ -202,6 +230,7 @@ nlu:
     - chào
     - 你好
     - I'm speaking a non-english language.
+    - Can do torless vanska.
 - intent: out_of_scope/other
   examples: |
     - Nice place you got here.
@@ -339,6 +368,16 @@ nlu:
     - asdfgasd
     - asdfgasdas
     - OK, I'm finished.
+    - Start a fire.
+    - Rain.
+    - Son.
+    - Stop the snow.
+    - Can I open the chest?
+    - What is this box?
+    - Like this?
+    - What languages can you speak?
+    - Do you collect my data?
+    - How To Do List app menu?
 - intent: make_winter
   examples: |
     - Make it snow
@@ -350,6 +389,9 @@ nlu:
     - will you let it snow
     - Snow snow snow snow
     - Please can you create winter
+    - Make it snow.
+    - Can you make winter?
+    - Make it snow please.
 - intent: chitchat/ask_whatisit
   examples: |
     - Can you brief me about mindfulness
@@ -388,6 +430,9 @@ nlu:
     - could you tell me more about rasa
     - explain me what rasa does
     - explain me what rasa is
+    - What is mindfulness?
+    - What this is place?
+    - What is this place?
 - intent: chitchat/ask_whoisit
   examples: |
     - who are you
@@ -408,6 +453,8 @@ nlu:
     - what's your name
     - what is you name
     - what is you name and where are you from
+    - Who are you?
+    - Who are you
 - intent: chitchat/ask_howdoing
   examples: |
     - Ahoy matey how are you?
@@ -482,6 +529,7 @@ nlu:
     - whats new
     - whatsapp
     - yow are you
+    - How are you doing?
 - intent: chitchat/ask_whatspossible
   examples: |
     - Can you explain me in one sentence what you are doing?
@@ -589,3 +637,18 @@ nlu:
     - what can you teache me?
     - Can rasa do calculations?
     - what you can
+    - Where can I go?
+    - What can I do more?
+    - Can you help me with something?
+    - Do you know any music at all?
+    - Can you speak Swedish?
+    - What was it you could do again?
+- intent: mood_unhappy
+  examples: |
+    - I hate you.
+- intent: book_session
+  examples: |
+    - Book session [wednesday](day) [10pm](Time)
+    - I would like to book a session this [Wednesday](day) [11am](Time)
+    - [Saturday](day) [5pm](Time) book me a session
+    - [monday](day) [4am](Time)
