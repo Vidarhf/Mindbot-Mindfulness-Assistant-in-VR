@@ -19,6 +19,9 @@ nlu:
     - can you turn on some music?
     - Turn music on.
     - Turn on music.
+    - Can you start some music?
+    - Turn on some music then.
+    - Can you turn on some music?
 - intent: turn_off_music
   examples: |
     - turn off music
@@ -38,6 +41,10 @@ nlu:
     - music pause
     - Turn music off.
     - Can you turn off the music
+    - Can you turn off the music please?
+    - Stop the music please.
+    - Turn off the music, please.
+    - Can you turn off the music bot
 - intent: breathing_exercise
   examples: |
     - do you have any excercise i can do?
@@ -53,6 +60,9 @@ nlu:
     - I want a breathing excercise
     - how many seconds should I inhale?
     - when should I hold my breath and exhale?
+    - Can you help me with a breathing exercise?
+    - Breathing exercise please.
+    - OK breathing exercise please.
 - intent: thank_you
   examples: |
     - ty
@@ -98,6 +108,13 @@ nlu:
     - [Random](user_name).
     - Hi, I'm [unity](user_name).
     - Call me [john](user_name)
+    - Holder
+    - [Joseph](user_name).
+    - Hi i'm [vidar](user_name)
+    - Hi my name is sara
+    - Hello I'm [vidar](user_name)
+    - Hello I'm button
+    - [Youssef](user_name)
 - intent: greet
   examples: |
     - hey
@@ -139,6 +156,9 @@ nlu:
     - bye bye
     - see you later
     - Bye now
+    - Goodbye.
+    - I'm going to leave now, goodbye.
+    - good bye!
 - intent: affirm
   examples: |
     - yes
@@ -147,6 +167,7 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - Yeah yeah, yeah.
 - intent: deny
   examples: |
     - no
@@ -157,6 +178,7 @@ nlu:
     - no way
     - not really
     - No you are not.
+    - No
 - intent: bot_challenge
   examples: |
     - are you a bot?
@@ -202,6 +224,7 @@ nlu:
     - chào
     - 你好
     - I'm speaking a non-english language.
+    - Can do torless vanska.
 - intent: out_of_scope/other
   examples: |
     - Nice place you got here.
@@ -339,6 +362,16 @@ nlu:
     - asdfgasd
     - asdfgasdas
     - OK, I'm finished.
+    - Can you change weather?
+    - Can you make it stop snowing?
+    - Can you make it?
+    - Stop snow.
+    - I want to move.
+    - Like this?
+    - Can you speak Swedish?
+    - Do you collect my data?
+    - I hate you.
+    - How To Do List app menu?
 - intent: make_winter
   examples: |
     - Make it snow
@@ -350,6 +383,9 @@ nlu:
     - will you let it snow
     - Snow snow snow snow
     - Please can you create winter
+    - Can you make it snow?
+    - Can you make winter?
+    - Make it snow please.
 - intent: chitchat/ask_whatisit
   examples: |
     - Can you brief me about mindfulness
@@ -388,6 +424,9 @@ nlu:
     - could you tell me more about rasa
     - explain me what rasa does
     - explain me what rasa is
+    - What is mindfulness?
+    - What this is place?
+    - What is this place?
 - intent: chitchat/ask_whoisit
   examples: |
     - who are you
@@ -408,6 +447,8 @@ nlu:
     - what's your name
     - what is you name
     - what is you name and where are you from
+    - Who are you?
+    - Who are you
 - intent: chitchat/ask_howdoing
   examples: |
     - Ahoy matey how are you?
@@ -482,6 +523,7 @@ nlu:
     - whats new
     - whatsapp
     - yow are you
+    - How are you doing?
 - intent: chitchat/ask_whatspossible
   examples: |
     - Can you explain me in one sentence what you are doing?
@@ -589,3 +631,15 @@ nlu:
     - what can you teache me?
     - Can rasa do calculations?
     - what you can
+    - What can you help me with?
+    - Do you know any music at all?
+    - What languages can you speak?
+    - What was it you could do again?
+- intent: book_session
+  examples: |
+    - I want to book next session on [wednesday](date) [4pm](time)
+    - I would like to book a new session on [Tuesday](date) at [9pm](time).
+    - Can I book a session on [Monday](date) morning, at [9.00](time)?
+    - I want a new session [5 pm](time) on [Friday](date).
+    - I want next session on this [Thursday](date) at [7am](time).
+    - At [16.00](time) this [Saturday](date) I would like to book a new session.
