@@ -19,6 +19,10 @@ nlu:
     - can you turn on some music?
     - Turn music on.
     - Turn on music.
+    - Play some music.
+    - Turn on some music then.
+    - Can you turn on some music?
+    - Do you have music?
 - intent: turn_off_music
   examples: |
     - turn off music
@@ -38,6 +42,9 @@ nlu:
     - music pause
     - Turn music off.
     - Can you turn off the music
+    - Stop the music please.
+    - Turn off the music, please.
+    - Can you turn off the music bot
 - intent: breathing_exercise
   examples: |
     - do you have any excercise i can do?
@@ -53,6 +60,10 @@ nlu:
     - I want a breathing excercise
     - how many seconds should I inhale?
     - when should I hold my breath and exhale?
+    - Stop the breathing exercise.
+    - I want a breathing exercise.
+    - Breathing exercise please.
+    - OK breathing exercise please.
 - intent: thank_you
   examples: |
     - ty
@@ -98,6 +109,11 @@ nlu:
     - [Random](user_name).
     - Hi, I'm [unity](user_name).
     - Call me [john](user_name)
+    - Hi i'm [vidar](user_name)
+    - Hi my name is sara
+    - Hello I'm [vidar](user_name)
+    - [Youssef](user_name)
+    - Hello I'm [Ali](user_name)
 - intent: greet
   examples: |
     - hey
@@ -125,6 +141,7 @@ nlu:
     - Hey.
     - Hi.
     - Hey hi.
+    - Hello I'm button
 - intent: goodbye
   examples: |
     - goodnight
@@ -139,6 +156,8 @@ nlu:
     - bye bye
     - see you later
     - Bye now
+    - Goodbye.
+    - good bye!
 - intent: affirm
   examples: |
     - yes
@@ -157,6 +176,8 @@ nlu:
     - no way
     - not really
     - No you are not.
+    - No nothing.
+    - No
 - intent: bot_challenge
   examples: |
     - are you a bot?
@@ -339,6 +360,8 @@ nlu:
     - asdfgasd
     - asdfgasdas
     - OK, I'm finished.
+    - Where should I go?
+    - I'm going to leave now, goodbye.
 - intent: make_winter
   examples: |
     - Make it snow
@@ -350,6 +373,9 @@ nlu:
     - will you let it snow
     - Snow snow snow snow
     - Please can you create winter
+    - Make it snow.
+    - Can you make winter?
+    - Make it snow please.
 - intent: chitchat/ask_whatisit
   examples: |
     - Can you brief me about mindfulness
@@ -388,6 +414,8 @@ nlu:
     - could you tell me more about rasa
     - explain me what rasa does
     - explain me what rasa is
+    - What is mindfulness?
+    - What this is place?
 - intent: chitchat/ask_whoisit
   examples: |
     - who are you
@@ -482,6 +510,7 @@ nlu:
     - whats new
     - whatsapp
     - yow are you
+    - How To Do List app menu?
 - intent: chitchat/ask_whatspossible
   examples: |
     - Can you explain me in one sentence what you are doing?
@@ -589,3 +618,22 @@ nlu:
     - what can you teache me?
     - Can rasa do calculations?
     - what you can
+    - What shall I do next?
+    - What should I do?
+    - What is this place?
+    - Do you know any music at all?
+    - What languages can you speak?
+    - Can you speak Swedish?
+    - I hate you.
+    - What was it you could do again?
+- intent: chitchat
+  examples: |
+    - Who are you
+- intent: book_session
+  examples: |
+    - I would like to book a session on [wednesday](date) [9pm](time)
+- intent: book session
+  examples: |
+    - i want to book a follow up
+    - i want to book a new session, on the [4th](date) of [april](month)
+    - i want to book a new session next monday
