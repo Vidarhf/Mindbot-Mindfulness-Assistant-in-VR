@@ -1,5 +1,5 @@
 ## Intro 
-This repository includes some of the assets used in my master thesis: _Interactive Machine Teaching of Conversational
+This repository includes some of the assets used in my master thesis in 2021: _Interactive Machine Teaching of Conversational
 Agents in VR, and Mindbot: a Mindfulness
 Assistant in VR_
 
